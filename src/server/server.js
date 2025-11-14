@@ -99,8 +99,8 @@ function getExtensionFromMessageType(type, msg = null) {
 // CONFIGURAÇÃO INICIAL
 // ============================================
 
-// Porta configurável via variável de ambiente
-const PORT = process.env.PORT ? Number(process.env.PORT) : 3000;
+// Porta configurável via variável de ambiente (padrão alterado para 8523)
+const PORT = process.env.PORT ? Number(process.env.PORT) : 8523;
 
 // Caminho de dados - em produção usa userData do Electron, em dev usa cwd
 const DATA_PATH = process.env.DATA_PATH || process.cwd();
@@ -1627,9 +1627,48 @@ export async function startServer() {
     console.log("✓ Database connected");
     console.log("✓ Socket.io initialized");
 
-    server.listen(PORT, () => {
-      console.log(`Servidor rodando em http://localhost:${PORT}`);
-    });
+    // Tentativa resiliente de bind: se a porta configurada estiver em uso,
+    // tentar portas subsequentes (até um limite) antes de falhar.
+    async function tryListen(startPort, maxAttempts = 10) {
+      for (let i = 0; i < maxAttempts; i++) {
+        const portToTry = startPort + i;
+        try {
+          await new Promise((resolve, reject) => {
+            const onError = (err) => {
+              server.removeListener("listening", onListening);
+              reject(err);
+            };
+
+            const onListening = () => {
+              server.removeListener("error", onError);
+              resolve();
+            };
+
+            server.once("error", onError);
+            server.once("listening", onListening);
+            server.listen(portToTry);
+          });
+
+          console.log(`Servidor rodando em http://localhost:${portToTry}`);
+          return portToTry;
+        } catch (err) {
+          if (err && err.code === "EADDRINUSE") {
+            console.warn(
+              `[SERVER] Porta ${portToTry} em uso. Tentando próxima porta...`
+            );
+            // continuar loop para tentar próxima porta
+            continue;
+          }
+          // erro diferente, rethrow
+          throw err;
+        }
+      }
+      throw new Error(
+        `Não foi possível escutar em nenhuma porta a partir de ${startPort}`
+      );
+    }
+
+    const actualPort = await tryListen(PORT, 20);
 
     // Reconectar contas
     const accountsList = await accounts.findMany({
