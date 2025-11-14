@@ -1,0 +1,1565 @@
+FRONTEND] Inicializando Socket.io...
+main-eFfm7KOJ.js:204 🔌 [FRONTEND] API_URL: http://localhost:3000
+main-eFfm7KOJ.js:204 🔌 [FRONTEND] Todos os listeners registrados
+main-eFfm7KOJ.js:204 🔌 [FRONTEND] Fechando Socket.io...
+main-eFfm7KOJ.js:204 🔌 [FRONTEND] Inicializando Socket.io...
+main-eFfm7KOJ.js:204 🔌 [FRONTEND] API_URL: http://localhost:3000
+main-eFfm7KOJ.js:204 🔌 [FRONTEND] Todos os listeners registrados
+localhost:3000/socket.io/?EIO=4&transport=polling&t=x8m46krn:1 
+        
+        
+       Failed to load resource: net::ERR_CONNECTION_REFUSED
+localhost:3000/api/accounts:1 
+        
+        
+       Failed to load resource: net::ERR_CONNECTION_REFUSED
+main-eFfm7KOJ.js:204 Error refreshing data: TypeError: Failed to fetch
+    at Se (main-eFfm7KOJ.js:204:44546)
+    at main-eFfm7KOJ.js:204:44264
+    at ti (main-eFfm7KOJ.js:161:22860)
+    at Xw (main-eFfm7KOJ.js:174:12971)
+    at Qw (main-eFfm7KOJ.js:174:12720)
+    at Iw (main-eFfm7KOJ.js:174:12630)
+    at Gw (main-eFfm7KOJ.js:174:12511)
+    at UD (main-eFfm7KOJ.js:174:24774)
+    at Oa (main-eFfm7KOJ.js:174:24433)
+    at main-eFfm7KOJ.js:174:23555
+Se @ main-eFfm7KOJ.js:204
+localhost:3000/socket.io/?EIO=4&transport=polling&t=x8m4lua2:1 
+        
+        
+       Failed to load resource: net::ERR_CONNECTION_REFUSED
+localhost:3000/api/accounts:1 
+        
+        
+       Failed to load resource: net::ERR_CONNECTION_REFUSED
+main-eFfm7KOJ.js:204 Error refreshing data: TypeError: Failed to fetch
+    at Se (main-eFfm7KOJ.js:204:44546)
+    at main-eFfm7KOJ.js:204:44264
+    at ti (main-eFfm7KOJ.js:161:22860)
+    at iD (main-eFfm7KOJ.js:174:14221)
+    at Jc (main-eFfm7KOJ.js:178:1511)
+    at fE (main-eFfm7KOJ.js:178:1363)
+    at UD (main-eFfm7KOJ.js:174:24863)
+    at Oa (main-eFfm7KOJ.js:174:24433)
+    at main-eFfm7KOJ.js:174:23555
+    at vr (main-eFfm7KOJ.js:62:2146)
+Se @ main-eFfm7KOJ.js:204
+localhost:3000/socket.io/?EIO=4&transport=polling&t=x8omdgr5:1 
+        
+        
+       Failed to load resource: net::ERR_CONNECTION_REFUSED
+main-eFfm7KOJ.js:204 
+        
+        
+       GET http://localhost:3000/socket.io/?EIO=4&transport=polling&t=x8rc88pj net::ERR_CONNECTION_REFUSED
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+main-eFfm7KOJ.js:204 
+        
+        
+       GET http://localhost:3000/socket.io/?EIO=4&transport=polling&t=x8x0ewl7 net::ERR_CONNECTION_REFUSED
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+main-eFfm7KOJ.js:204 
+        
+        
+       GET http://localhost:3000/socket.io/?EIO=4&transport=polling&t=x92p3umh net::ERR_CONNECTION_REFUSED
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+main-eFfm7KOJ.js:302 🔵 [FRONTEND] Botão "Gerar QR Code" clicado
+main-eFfm7KOJ.js:302 🔵 [FRONTEND] Nome digitado: lukas
+main-eFfm7KOJ.js:302 🔵 [FRONTEND] Chamando addAccount()...
+main-eFfm7KOJ.js:204 🟢 [CONTEXT] addAccount() iniciado
+main-eFfm7KOJ.js:204 🟢 [CONTEXT] Enviando POST para http://localhost:3000/api/accounts
+main-eFfm7KOJ.js:204 🟢 [CONTEXT] Payload: {name: 'lukas'}
+main-eFfm7KOJ.js:204 
+        
+        
+       POST http://localhost:3000/api/accounts net::ERR_CONNECTION_REFUSED
+addAccount @ main-eFfm7KOJ.js:204
+G @ main-eFfm7KOJ.js:302
+oe @ main-eFfm7KOJ.js:78
+dm @ main-eFfm7KOJ.js:78
+zf @ main-eFfm7KOJ.js:78
+Ex @ main-eFfm7KOJ.js:78
+wy @ main-eFfm7KOJ.js:90
+pN @ main-eFfm7KOJ.js:90
+Dy @ main-eFfm7KOJ.js:90
+hN @ main-eFfm7KOJ.js:90
+(anonymous) @ main-eFfm7KOJ.js:90
+Zh @ main-eFfm7KOJ.js:174
+cm @ main-eFfm7KOJ.js:78
+Fd @ main-eFfm7KOJ.js:90
+P0 @ main-eFfm7KOJ.js:78
+Rd @ main-eFfm7KOJ.js:78
+F0 @ main-eFfm7KOJ.js:78
+main-eFfm7KOJ.js:204 🔴 [CONTEXT] Erro ao adicionar conta: TypeError: Failed to fetch
+    at addAccount (main-eFfm7KOJ.js:204:45407)
+    at G (main-eFfm7KOJ.js:302:27371)
+    at HTMLUnknownElement.oe (main-eFfm7KOJ.js:78:32994)
+    at Object.dm (main-eFfm7KOJ.js:78:33329)
+    at zf (main-eFfm7KOJ.js:78:34293)
+    at Ex (main-eFfm7KOJ.js:78:34350)
+    at wy (main-eFfm7KOJ.js:90:10723)
+    at pN (main-eFfm7KOJ.js:90:11063)
+    at Dy (main-eFfm7KOJ.js:90:11171)
+    at hN (main-eFfm7KOJ.js:90:11242)
+addAccount @ main-eFfm7KOJ.js:204
+await in addAccount
+G @ main-eFfm7KOJ.js:302
+oe @ main-eFfm7KOJ.js:78
+dm @ main-eFfm7KOJ.js:78
+zf @ main-eFfm7KOJ.js:78
+Ex @ main-eFfm7KOJ.js:78
+wy @ main-eFfm7KOJ.js:90
+pN @ main-eFfm7KOJ.js:90
+Dy @ main-eFfm7KOJ.js:90
+hN @ main-eFfm7KOJ.js:90
+(anonymous) @ main-eFfm7KOJ.js:90
+Zh @ main-eFfm7KOJ.js:174
+cm @ main-eFfm7KOJ.js:78
+Fd @ main-eFfm7KOJ.js:90
+P0 @ main-eFfm7KOJ.js:78
+Rd @ main-eFfm7KOJ.js:78
+F0 @ main-eFfm7KOJ.js:78
+main-eFfm7KOJ.js:302 🔴 [FRONTEND] Erro ao adicionar conta: TypeError: Failed to fetch
+    at addAccount (main-eFfm7KOJ.js:204:45407)
+    at G (main-eFfm7KOJ.js:302:27371)
+    at HTMLUnknownElement.oe (main-eFfm7KOJ.js:78:32994)
+    at Object.dm (main-eFfm7KOJ.js:78:33329)
+    at zf (main-eFfm7KOJ.js:78:34293)
+    at Ex (main-eFfm7KOJ.js:78:34350)
+    at wy (main-eFfm7KOJ.js:90:10723)
+    at pN (main-eFfm7KOJ.js:90:11063)
+    at Dy (main-eFfm7KOJ.js:90:11171)
+    at hN (main-eFfm7KOJ.js:90:11242)
+G @ main-eFfm7KOJ.js:302
+await in G
+oe @ main-eFfm7KOJ.js:78
+dm @ main-eFfm7KOJ.js:78
+zf @ main-eFfm7KOJ.js:78
+Ex @ main-eFfm7KOJ.js:78
+wy @ main-eFfm7KOJ.js:90
+pN @ main-eFfm7KOJ.js:90
+Dy @ main-eFfm7KOJ.js:90
+hN @ main-eFfm7KOJ.js:90
+(anonymous) @ main-eFfm7KOJ.js:90
+Zh @ main-eFfm7KOJ.js:174
+cm @ main-eFfm7KOJ.js:78
+Fd @ main-eFfm7KOJ.js:90
+P0 @ main-eFfm7KOJ.js:78
+Rd @ main-eFfm7KOJ.js:78
+F0 @ main-eFfm7KOJ.js:78
+main-eFfm7KOJ.js:204 
+        
+        
+       GET http://localhost:3000/socket.io/?EIO=4&transport=polling&t=x98d340d net::ERR_CONNECTION_REFUSED
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+main-eFfm7KOJ.js:204 
+        
+        
+       GET http://localhost:3000/socket.io/?EIO=4&transport=polling&t=x9ccz14k net::ERR_CONNECTION_REFUSED
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+main-eFfm7KOJ.js:204 
+        
+        
+       GET http://localhost:3000/socket.io/?EIO=4&transport=polling&t=x9i17z08 net::ERR_CONNECTION_REFUSED
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+main-eFfm7KOJ.js:204 
+        
+        
+       GET http://localhost:3000/socket.io/?EIO=4&transport=polling&t=x9npsikh net::ERR_CONNECTION_REFUSED
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+main-eFfm7KOJ.js:204 
+        
+        
+       GET http://localhost:3000/socket.io/?EIO=4&transport=polling&t=x9tdyxa2 net::ERR_CONNECTION_REFUSED
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+main-eFfm7KOJ.js:204 
+        
+        
+       GET http://localhost:3000/socket.io/?EIO=4&transport=polling&t=x9z2nk16 net::ERR_CONNECTION_REFUSED
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+main-eFfm7KOJ.js:204 
+        
+        
+       GET http://localhost:3000/socket.io/?EIO=4&transport=polling&t=xa4qsfnv net::ERR_CONNECTION_REFUSED
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+reconnect @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+D @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+Ct.emit @ main-eFfm7KOJ.js:204
+_onError @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
+setTimeout
+p.onreadystatechange @ main-eFfm7KOJ.js:204
+XMLHttpRequest.send
+_create @ main-eFfm7KOJ.js:204
+na @ main-eFfm7KOJ.js:204
+request @ main-eFfm7KOJ.js:204
+doPoll @ main-eFfm7KOJ.js:204
+_poll @ main-eFfm7KOJ.js:204
+doOpen @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+_open @ main-eFfm7KOJ.js:204
+si @ main-eFfm7KOJ.js:204
+S1 @ main-eFfm7KOJ.js:204
+x1 @ main-eFfm7KOJ.js:204
+open @ main-eFfm7KOJ.js:204
+(anonymous) @ main-eFfm7KOJ.js:204
