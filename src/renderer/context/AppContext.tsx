@@ -13,6 +13,7 @@ import React, {
   ReactNode,
 } from "react";
 import { io } from "socket.io-client";
+import { API_URL } from "../utils/config";
 
 // Types
 interface Account {
@@ -82,7 +83,8 @@ interface AppContextType {
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
 
-const API_URL = "http://localhost:3000";
+// Use shared API_URL (defaults to port 8523)
+// The value lives in `src/renderer/utils/config.ts`
 
 export const AppProvider: React.FC<{ children: ReactNode }> = ({
   children,
@@ -623,12 +625,10 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({
   const addAccount = async (name: string) => {
     try {
       console.log("🟢 [CONTEXT] addAccount() iniciado");
-      console.log(
-        "🟢 [CONTEXT] Enviando POST para http://localhost:3000/api/accounts"
-      );
+      console.log("🟢 [CONTEXT] Enviando POST para " + API_URL + "/api/accounts");
       console.log("🟢 [CONTEXT] Payload:", { name });
 
-      const response = await fetch("http://localhost:3000/api/accounts", {
+      const response = await fetch(`${API_URL}/api/accounts`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

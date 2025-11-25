@@ -5,6 +5,7 @@
  */
 
 import React, { useState, useRef } from "react";
+import { API_URL } from "../utils/config";
 import { Play, Pause, Volume2 } from "lucide-react";
 
 interface Message {
@@ -193,9 +194,9 @@ const MessageItem: React.FC<MessageItemProps> = ({ message }) => {
       case "image":
         return (
           <div>
-            {message.mediaUrl && (
+                {message.mediaUrl && (
               <img
-                src={`http://localhost:3000${message.mediaUrl}`}
+                src={`${API_URL}${message.mediaUrl}`}
                 alt="Imagem"
                 className="max-w-full rounded-lg mb-2"
                 style={{ maxHeight: "300px" }}
@@ -224,7 +225,7 @@ const MessageItem: React.FC<MessageItemProps> = ({ message }) => {
                 style={{ maxHeight: "300px" }}
               >
                 <source
-                  src={`http://localhost:3000${message.mediaUrl}`}
+                  src={`${API_URL}${message.mediaUrl}`}
                   type="video/mp4"
                 />
                 Seu navegador não suporta vídeo.
@@ -240,7 +241,7 @@ const MessageItem: React.FC<MessageItemProps> = ({ message }) => {
           <div>
             {message.mediaUrl && (
               <a
-                href={`http://localhost:3000${message.mediaUrl}`}
+                href={`${API_URL}${message.mediaUrl}`}
                 download
                 className={`inline-flex items-center space-x-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                   isSent

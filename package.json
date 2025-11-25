@@ -13,7 +13,7 @@
     "build:preload": "esbuild preload.ts --bundle --platform=node --outfile=preload.js --external:electron",
     "rebuild": "electron-rebuild -f -w better-sqlite3",
     "build:win": "npm run clean && npm run build && npm run rebuild && electron-builder --win --x64",
-    "build:win-nosign": "npm run clean && npm run build && npm run rebuild && electron-builder --win --x64 -c.win.sign=null",
+    "build:win-nosign": "npm run clean && npm run build && npm run rebuild && electron-builder --win --x64 -c.win.forceCodeSigning=false",
     "build:win-portable": "npm run clean && npm run build && npm run rebuild && electron-builder --win portable --x64",
     "build:mac": "npm run clean && npm run build && npm run rebuild && electron-builder --mac",
     "build:all": "npm run clean && npm run build && npm run rebuild && electron-builder --win --mac --linux",
