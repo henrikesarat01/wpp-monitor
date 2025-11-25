@@ -1,20 +1,25 @@
 {
-  "name": "wpp-monitor",
+  "name": "iara",
   "version": "1.0.0",
-  "description": "Monitor múltiplos números de WhatsApp Business localmente",
+  "description": "IARA - Inteligência Analítica de Rastreamento Avançado",
   "main": "main.js",
   "type": "module",
   "scripts": {
     "dev": "concurrently \"npm run dev:vite\" \"npm run dev:electron\"",
     "dev:vite": "vite",
     "dev:electron": "wait-on http://localhost:5173 && electron .",
+    "clean": "rm -rf dist dist-installer node_modules/.vite",
     "build": "npm run build:preload && tsc && vite build",
     "build:preload": "esbuild preload.ts --bundle --platform=node --outfile=preload.js --external:electron",
-    "build:win": "npm run build && electron-builder --win --x64",
-    "build:win-nosign": "npm run build && electron-builder --win --x64 -c.win.sign=null",
-    "build:win-portable": "npm run build && electron-builder --win portable --x64",
-    "build:all": "npm run build && electron-builder --win --mac --linux",
-    "postinstall": "electron-builder install-app-deps"
+    "rebuild": "electron-rebuild -f -w better-sqlite3",
+    "build:win": "npm run clean && npm run build && npm run rebuild && electron-builder --win --x64",
+    "build:win-nosign": "npm run clean && npm run build && npm run rebuild && electron-builder --win --x64 -c.win.sign=null",
+    "build:win-portable": "npm run clean && npm run build && npm run rebuild && electron-builder --win portable --x64",
+    "build:mac": "npm run clean && npm run build && npm run rebuild && electron-builder --mac",
+    "build:all": "npm run clean && npm run build && npm run rebuild && electron-builder --win --mac --linux",
+    "postinstall": "electron-builder install-app-deps",
+    "test-audio": "node test-transcription-config.js",
+    "transcribe-batch": "node transcribe-batch.js"
   },
   "keywords": [
     "whatsapp",
@@ -22,21 +27,29 @@
     "electron",
     "baileys"
   ],
-  "author": "WPP Monitor Team",
+  "author": "IARA Team",
   "license": "MIT",
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@hapi/boom": "^10.0.1",
     "@whiskeysockets/baileys": "^6.7.7",
+    "@xenova/transformers": "^2.17.2",
     "better-sqlite3": "^12.4.1",
     "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
     "express": "^4.18.2",
+    "fluent-ffmpeg": "^2.1.3",
+    "form-data": "^4.0.5",
     "lucide-react": "^0.294.0",
+    "node-fetch": "^3.3.2",
+    "pdfkit": "^0.17.2",
     "pino": "^8.16.2",
     "qrcode": "^1.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "socket.io": "^4.6.1",
-    "socket.io-client": "^4.6.1"
+    "socket.io-client": "^4.6.1",
+    "wavefile": "^11.0.0"
   },
   "devDependencies": {
     "@electron/rebuild": "^3.7.2",
@@ -51,6 +64,7 @@
     "concurrently": "^8.2.2",
     "electron": "^33.4.11",
     "electron-builder": "^26.0.12",
+    "electron-rebuild": "^3.2.9",
     "esbuild": "^0.27.0",
     "postcss": "^8.4.32",
     "tailwindcss": "^3.3.6",
@@ -59,23 +73,29 @@
     "wait-on": "^7.2.0"
   },
   "build": {
-    "appId": "com.wppmonitor.app",
-    "productName": "WPP Monitor",
+    "appId": "com.iara.app",
+    "productName": "IARA",
     "directories": {
       "output": "dist-installer",
       "buildResources": "build"
     },
     "asarUnpack": [
-      "node_modules/better-sqlite3/**/*"
+      "node_modules/better-sqlite3/**/*",
+      "node_modules/onnxruntime-node/**/*",
+      "node_modules/@xenova/transformers/**/*",
+      "node_modules/sharp/**/*"
     ],
     "files": [
       "dist/**/*",
       "main.js",
       "preload.js",
+      "pdf-generator.js",
+      "pdf-generator-bulk.js",
       "src/**/*",
       "node_modules/**/*",
       "data/**/*",
-      "package.json"
+      "package.json",
+      ".env"
     ],
     "extraResources": [],
     "win": {
@@ -88,7 +108,7 @@
         }
       ],
       "icon": "build/icon.ico",
-      "artifactName": "${productName}-Setup-${version}.${ext}",
+      "artifactName": "IARA-Setup-${version}.${ext}",
       "signtoolOptions": null
     },
     "nsis": {
@@ -96,20 +116,24 @@
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "WPP Monitor",
+      "shortcutName": "IARA",
       "installerIcon": "build/icon.ico",
       "uninstallerIcon": "build/icon.ico",
       "license": "LICENSE"
     },
     "portable": {
-      "artifactName": "${productName}-Portable-${version}.${ext}"
+      "artifactName": "IARA-Portable-${version}.${ext}"
     },
     "mac": {
       "target": [
         "dmg"
       ],
       "icon": "build/icon.icns",
-      "category": "public.app-category.business"
+      "category": "public.app-category.business",
+      "hardenedRuntime": false,
+      "gatekeeperAssess": false,
+      "entitlements": "build/entitlements.mac.plist",
+      "entitlementsInherit": "build/entitlements.mac.plist"
     },
     "linux": {
       "target": [

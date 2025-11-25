@@ -16,6 +16,10 @@ contextBridge.exposeInMainWorld("electron", {
   // Platform info
   platform: process.platform,
 
+  // Salvar arquivo
+  saveFile: (filename: string, content: string) =>
+    ipcRenderer.invoke("save-file", filename, content),
+
   // Listener para logs do processo principal
   onMainLog: (callback: (log: string) => void) => {
     ipcRenderer.on("main-process-log", (_event, log) => callback(log));
@@ -27,6 +31,7 @@ export interface ElectronAPI {
   getAppPath: () => Promise<string>;
   getVersion: () => Promise<string>;
   platform: string;
+  saveFile: (filename: string, content: string) => Promise<string | null>;
   onMainLog: (callback: (log: string) => void) => void;
 }
 

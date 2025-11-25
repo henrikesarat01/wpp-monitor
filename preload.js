@@ -23,6 +23,8 @@ import_electron.contextBridge.exposeInMainWorld("electron", {
   getVersion: () => import_electron.ipcRenderer.invoke("get-version"),
   // Platform info
   platform: process.platform,
+  // Salvar arquivo
+  saveFile: (filename, content) => import_electron.ipcRenderer.invoke("save-file", filename, content),
   // Listener para logs do processo principal
   onMainLog: (callback) => {
     import_electron.ipcRenderer.on("main-process-log", (_event, log) => callback(log));

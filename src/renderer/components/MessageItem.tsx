@@ -14,6 +14,7 @@ interface Message {
   direction: "sent" | "received";
   type: string;
   mediaUrl?: string;
+  audioTranscription?: string;
 }
 
 interface MessageItemProps {
@@ -23,12 +24,18 @@ interface MessageItemProps {
 interface AudioPlayerProps {
   mediaUrl?: string;
   isSent: boolean;
+  audioTranscription?: string;
 }
 
-const AudioPlayer: React.FC<AudioPlayerProps> = ({ mediaUrl, isSent }) => {
+const AudioPlayer: React.FC<AudioPlayerProps> = ({
+  mediaUrl,
+  isSent,
+  audioTranscription,
+}) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
+  const [showTranscription, setShowTranscription] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   const togglePlay = () => {
@@ -63,49 +70,113 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ mediaUrl, isSent }) => {
   };
 
   return (
-    <div className="flex items-center space-x-3 p-2 bg-gray-100 rounded-lg">
-      <button
-        onClick={togglePlay}
-        className={`p-2 rounded-full ${
-          isSent
-            ? "bg-blue-600 hover:bg-blue-700 text-white"
-            : "bg-gray-600 hover:bg-gray-700 text-white"
-        } transition-colors`}
-      >
-        {isPlaying ? <Pause size={16} /> : <Play size={16} />}
-      </button>
+    <div className="space-y-2">
+      <div className="flex items-center space-x-3 p-2 bg-gray-100 rounded-lg">
+        <button
+          onClick={togglePlay}
+          className={`p-2 rounded-full ${
+            isSent
+              ? "bg-blue-600 hover:bg-blue-700 text-white"
+              : "bg-gray-600 hover:bg-gray-700 text-white"
+          } transition-colors`}
+        >
+          {isPlaying ? <Pause size={16} /> : <Play size={16} />}
+        </button>
 
-      <div className="flex-1">
-        <div className="flex items-center space-x-2">
-          <Volume2
-            size={14}
-            className={isSent ? "text-blue-400" : "text-gray-500"}
-          />
-          <span className="text-xs text-gray-600">
-            {formatTime(currentTime)} / {formatTime(duration)}
-          </span>
+        <div className="flex-1">
+          <div className="flex items-center space-x-2">
+            <Volume2
+              size={14}
+              className={isSent ? "text-blue-400" : "text-gray-500"}
+            />
+            <span className="text-xs text-gray-600">
+              {formatTime(currentTime)} / {formatTime(duration)}
+            </span>
+          </div>
+          <div className="w-full bg-gray-200 rounded-full h-1 mt-1">
+            <div
+              className={`h-1 rounded-full ${
+                isSent ? "bg-blue-500" : "bg-gray-500"
+              }`}
+              style={{
+                width: duration ? `${(currentTime / duration) * 100}%` : "0%",
+              }}
+            />
+          </div>
         </div>
-        <div className="w-full bg-gray-200 rounded-full h-1 mt-1">
-          <div
-            className={`h-1 rounded-full ${
-              isSent ? "bg-blue-500" : "bg-gray-500"
+
+        {audioTranscription && (
+          <button
+            onClick={() => setShowTranscription(!showTranscription)}
+            className={`p-2 rounded-full transition-colors ${
+              showTranscription
+                ? isSent
+                  ? "bg-blue-600 text-white"
+                  : "bg-gray-600 text-white"
+                : "bg-gray-300 text-gray-600 hover:bg-gray-400"
             }`}
-            style={{
-              width: duration ? `${(currentTime / duration) * 100}%` : "0%",
-            }}
-          />
-        </div>
+            title="Ver transcrição"
+          >
+            <svg
+              className={`w-4 h-4 transition-transform ${
+                showTranscription ? "rotate-180" : ""
+              }`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+        )}
+
+        <audio
+          ref={audioRef}
+          src={mediaUrl ? `http://localhost:3000${mediaUrl}` : undefined}
+          onTimeUpdate={handleTimeUpdate}
+          onLoadedMetadata={handleLoadedMetadata}
+          onPlay={handlePlay}
+          onPause={handlePause}
+          onEnded={() => setIsPlaying(false)}
+        />
       </div>
 
-      <audio
-        ref={audioRef}
-        src={mediaUrl ? `http://localhost:3000${mediaUrl}` : undefined}
-        onTimeUpdate={handleTimeUpdate}
-        onLoadedMetadata={handleLoadedMetadata}
-        onPlay={handlePlay}
-        onPause={handlePause}
-        onEnded={() => setIsPlaying(false)}
-      />
+      {audioTranscription && showTranscription && (
+        <div
+          className={`p-3 rounded-lg text-sm ${
+            isSent
+              ? "bg-blue-50 text-gray-800 border border-blue-200"
+              : "bg-gray-50 text-gray-800 border border-gray-200"
+          }`}
+        >
+          <div className="flex items-start space-x-2">
+            <svg
+              className="w-4 h-4 mt-0.5 flex-shrink-0 text-gray-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              />
+            </svg>
+            <div className="flex-1">
+              <p className="font-semibold text-xs text-gray-600 mb-1">
+                Transcrição:
+              </p>
+              <p className="leading-relaxed">{audioTranscription}</p>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
@@ -136,7 +207,13 @@ const MessageItem: React.FC<MessageItemProps> = ({ message }) => {
           </div>
         );
       case "audio":
-        return <AudioPlayer mediaUrl={message.mediaUrl} isSent={isSent} />;
+        return (
+          <AudioPlayer
+            mediaUrl={message.mediaUrl}
+            isSent={isSent}
+            audioTranscription={message.audioTranscription}
+          />
+        );
       case "video":
         return (
           <div>

@@ -1,0 +1,213 @@
+/**
+ * Serviço de Transcrição de Áudio
+ * Usa Whisper local (GRATUITO) via @xenova/transformers
+ */
+
+import { pipeline } from "@xenova/transformers";
+import fs from "fs";
+import path from "path";
+import { exec } from "child_process";
+import { promisify } from "util";
+import wavefilePackage from "wavefile";
+
+const { WaveFile } = wavefilePackage;
+const execAsync = promisify(exec);
+
+class TranscriptionService {
+  constructor() {
+    this.model = null;
+    this.loading = false;
+    this.available = true; // Sempre disponível (gratuito!)
+
+    console.log(
+      "✅ [TRANSCRIPTION] Serviço de transcrição LOCAL inicializado (GRATUITO)"
+    );
+    console.log(
+      "💡 [TRANSCRIPTION] Usando Whisper local - sem custos, sem limites!"
+    );
+  }
+
+  /**
+   * Inicializa o modelo Whisper local (lazy loading)
+   */
+  async initModel() {
+    if (this.model) return this.model;
+
+    if (this.loading) {
+      // Aguardar se já está carregando
+      while (this.loading) {
+        await new Promise((resolve) => setTimeout(resolve, 100));
+      }
+      return this.model;
+    }
+
+    try {
+      this.loading = true;
+      console.log("🔄 [TRANSCRIPTION] Carregando modelo Whisper local...");
+      console.log(
+        "⏳ [TRANSCRIPTION] Primeira vez pode demorar ~5min (download do modelo MEDIUM)"
+      );
+
+      // Usar modelo Whisper MEDIUM para português (máxima qualidade)
+      this.model = await pipeline(
+        "automatic-speech-recognition",
+        "Xenova/whisper-medium"
+      );
+
+      console.log("✅ [TRANSCRIPTION] Modelo Whisper MEDIUM carregado!");
+      return this.model;
+    } catch (error) {
+      console.error("❌ [TRANSCRIPTION] Erro ao carregar modelo:", error);
+      throw error;
+    } finally {
+      this.loading = false;
+    }
+  }
+
+  /**
+   * Transcreve um arquivo de áudio usando Whisper local
+   * @param {string} audioFilePath - Caminho completo do arquivo de áudio
+   * @param {string} language - Código do idioma (pt, en, es, etc)
+   * @returns {Promise<{text: string, provider: string}>}
+   */
+  async transcribeAudio(audioFilePath, language = "pt") {
+    if (!fs.existsSync(audioFilePath)) {
+      throw new Error(`Arquivo de áudio não encontrado: ${audioFilePath}`);
+    }
+
+    try {
+      console.log(`🎤 [TRANSCRIPTION] Transcrevendo áudio: ${audioFilePath}`);
+      console.log("💰 [TRANSCRIPTION] Usando Whisper LOCAL (100% gratuito!)");
+
+      // Inicializar modelo se necessário
+      const transcriber = await this.initModel();
+
+      // Verificar tamanho do arquivo
+      const stats = fs.statSync(audioFilePath);
+      const fileSizeMB = stats.size / (1024 * 1024);
+      console.log(
+        `📊 [TRANSCRIPTION] Tamanho do arquivo: ${fileSizeMB.toFixed(2)}MB`
+      );
+
+      // Converter áudio para WAV 16kHz mono usando ffmpeg
+      // WhatsApp usa Opus codec, então forçamos decodificação correta
+      console.log("🔊 [TRANSCRIPTION] Convertendo áudio (Opus → WAV)...");
+      const tempWavPath = audioFilePath.replace(
+        path.extname(audioFilePath),
+        "_temp.wav"
+      );
+
+      try {
+        // Primeiro: decodificar Opus e converter para WAV simples
+        await execAsync(
+          `ffmpeg -i "${audioFilePath}" -vn -ar 16000 -ac 1 -c:a pcm_s16le "${tempWavPath}" -y 2>&1`
+        );
+      } catch (error) {
+        throw new Error(`Erro ao converter áudio: ${error.message}`);
+      }
+
+      // Ler arquivo WAV
+      const wavBuffer = fs.readFileSync(tempWavPath);
+      const wav = new WaveFile(wavBuffer);
+
+      // Converter para Float32Array normalizado
+      const samples = new Float32Array(wav.getSamples(false, Float32Array));
+
+      // Limpar arquivo temporário
+      fs.unlinkSync(tempWavPath);
+
+      // Transcrever usando Whisper local
+      console.log("🎤 [TRANSCRIPTION] Transcrevendo com Whisper...");
+      const startTime = Date.now();
+      const result = await transcriber(samples, {
+        language: language,
+        task: "transcribe",
+        return_timestamps: false,
+      });
+
+      const duration = ((Date.now() - startTime) / 1000).toFixed(2);
+      console.log(`⏱️  [TRANSCRIPTION] Transcrito em ${duration}s`);
+
+      const transcribedText = result.text || "";
+
+      console.log("✅ [TRANSCRIPTION] Transcrição concluída com sucesso");
+      console.log(
+        `📝 [TRANSCRIPTION] Texto: "${transcribedText.substring(0, 100)}..."`
+      );
+
+      return {
+        text: transcribedText,
+        provider: "whisper-local",
+        duration: parseFloat(duration),
+      };
+    } catch (error) {
+      console.error("❌ [TRANSCRIPTION] Erro:", error.message);
+      throw error;
+    }
+  }
+
+  /**
+   * Transcreve múltiplos áudios em lote
+   * @param {Array<{id: string, audioFilePath: string}>} audios
+   * @param {string} language
+   * @returns {Promise<Array<{id: string, transcription: string, error?: string}>>}
+   */
+  async transcribeBatch(audios, language = "pt") {
+    const results = [];
+
+    for (const audio of audios) {
+      try {
+        const transcription = await this.transcribeAudio(
+          audio.audioFilePath,
+          language
+        );
+
+        results.push({
+          id: audio.id,
+          transcription: transcription.text,
+          duration: transcription.duration,
+          provider: transcription.provider,
+        });
+
+        // Pequeno delay entre transcrições
+        await new Promise((resolve) => setTimeout(resolve, 500));
+      } catch (error) {
+        console.error(
+          `❌ [TRANSCRIPTION] Erro ao transcrever ${audio.id}:`,
+          error.message
+        );
+        results.push({
+          id: audio.id,
+          error: error.message,
+        });
+      }
+    }
+
+    return results;
+  }
+
+  /**
+   * Verifica se o serviço está disponível
+   */
+  isAvailable() {
+    return this.available;
+  }
+
+  /**
+   * Retorna status do serviço
+   */
+  getStatus() {
+    return {
+      available: this.available,
+      provider: "whisper-local",
+      model: "Xenova/whisper-medium",
+      free: true,
+      cost: "R$ 0,00",
+    };
+  }
+}
+
+// Singleton
+const transcriptionService = new TranscriptionService();
+
+export default transcriptionService;

@@ -1,33 +1,40 @@
 /**
  * Sidebar Component
- * 
+ *
  * Menu lateral com lista de contas conectadas
  */
 
-import React, { useState } from 'react';
-import { Plus, Smartphone, Circle, Trash2 } from 'lucide-react';
-import { useApp } from '../context/AppContext';
+import React, { useState } from "react";
+import { Plus, Smartphone, Circle, Trash2 } from "lucide-react";
+import { useApp } from "../context/AppContext";
 
 interface SidebarProps {
   onAddAccount: () => void;
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ onAddAccount }) => {
-  const { accounts, selectedAccount, setSelectedAccount, deleteAccount } = useApp();
-  const [deletingAccountId, setDeletingAccountId] = useState<string | null>(null);
+  const { accounts, selectedAccount, setSelectedAccount, deleteAccount } =
+    useApp();
+  const [deletingAccountId, setDeletingAccountId] = useState<string | null>(
+    null
+  );
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case 'connected':
-        return 'text-green-500';
-      case 'qr_required':
-        return 'text-yellow-500';
+      case "connected":
+        return "text-green-500";
+      case "qr_required":
+        return "text-yellow-500";
       default:
-        return 'text-gray-400';
+        return "text-gray-400";
     }
   };
 
-  const handleDeleteAccount = async (accountId: string, accountName: string, e: React.MouseEvent) => {
+  const handleDeleteAccount = async (
+    accountId: string,
+    accountName: string,
+    e: React.MouseEvent
+  ) => {
     e.stopPropagation(); // Evitar selecionar a conta ao clicar no botão
 
     const confirmed = window.confirm(
@@ -40,7 +47,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onAddAccount }) => {
     try {
       await deleteAccount(accountId);
     } catch (error) {
-      alert('Erro ao deletar conta');
+      alert("Erro ao deletar conta");
     } finally {
       setDeletingAccountId(null);
     }
@@ -50,8 +57,10 @@ const Sidebar: React.FC<SidebarProps> = ({ onAddAccount }) => {
     <div className="w-64 bg-white border-r border-gray-200 flex flex-col">
       {/* Header */}
       <div className="p-4 border-b border-gray-200">
-        <h1 className="text-xl font-bold text-gray-800">WPP Monitor</h1>
-        <p className="text-xs text-gray-500 mt-1">Gerenciador de Contas</p>
+        <h1 className="text-xl font-bold text-gray-800">IARA</h1>
+        <p className="text-xs text-gray-500 mt-1">
+          Inteligência Analítica de Rastreamento Avançado
+        </p>
       </div>
 
       {/* Add Account Button */}
@@ -77,8 +86,8 @@ const Sidebar: React.FC<SidebarProps> = ({ onAddAccount }) => {
                 key={account.id}
                 className={`relative group rounded-lg transition-colors ${
                   selectedAccount?.id === account.id
-                    ? 'bg-blue-50 border border-blue-200'
-                    : 'hover:bg-gray-50'
+                    ? "bg-blue-50 border border-blue-200"
+                    : "hover:bg-gray-50"
                 }`}
               >
                 <button
@@ -102,7 +111,9 @@ const Sidebar: React.FC<SidebarProps> = ({ onAddAccount }) => {
                   </div>
                 </button>
                 <button
-                  onClick={(e) => handleDeleteAccount(account.id, account.name, e)}
+                  onClick={(e) =>
+                    handleDeleteAccount(account.id, account.name, e)
+                  }
                   disabled={deletingAccountId === account.id}
                   className="absolute top-2 right-2 p-1.5 text-red-500 hover:bg-red-50 rounded opacity-0 group-hover:opacity-100 transition-opacity disabled:opacity-50"
                   title="Apagar conta"
