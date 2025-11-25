@@ -194,7 +194,7 @@ const MessageItem: React.FC<MessageItemProps> = ({ message }) => {
       case "image":
         return (
           <div>
-                {message.mediaUrl && (
+            {message.mediaUrl && (
               <img
                 src={`${API_URL}${message.mediaUrl}`}
                 alt="Imagem"
